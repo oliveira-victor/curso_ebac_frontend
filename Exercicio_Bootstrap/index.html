@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #d3d3d3;
+        }
+        .container {
+            background-color: #fff;
+            margin-top: 10%;
+            padding: 26px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+        .selecionar {
+            margin-top: 20px;
+        }
+        .campo {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 20px;
+        }
+        .footer {
+            width: 500px;
+            margin: 80px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário em Bootstrap</h1>
+        <form>
+            <label for="nome" class="form-label campo">Nome:</label>
+            <input class="form-control" type="text" id="nome" required>
+            <label for="email" class="form-label campo">Email:</label>
+            <input class="form-control" type="email" id="email" required>
+            <label for="tel" class="form-label campo">Telefone:</label>
+            <input class="form-control" type="tel" id="tel" required>
+            <div class="form-check form-switch selecionar">
+                <input class="form-check-input" type="checkbox" id="aceito-termos">
+                <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site.</label>
+            </div>
+            <button class="btn btn-dark" onclick="enviado()">Enviar</button>
+        </form>
+    </div>
+    <div class="footer">
+        <h3>Victor Freire Oliveira</h3>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
